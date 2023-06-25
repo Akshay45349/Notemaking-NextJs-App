@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Shojumaru&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
