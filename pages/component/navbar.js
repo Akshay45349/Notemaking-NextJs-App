@@ -1,16 +1,14 @@
 import React from 'react'
-import Link from 'next/link';
 import {  useSession, signOut } from 'next-auth/react';
 import { Navbar, Nav } from 'rsuite';
 import HomeIcon from '@rsuite/icons/legacy/Home';
-import CogIcon from '@rsuite/icons/legacy/Cog';
 import 'rsuite/dist/rsuite-no-reset.min.css';
 
 
 const HomeNavbar = () => {
 
     const {data:session}=useSession();
-    const handleLogout=async()=>{
+    const handleLogout=async(e)=>{
       await signOut({redirect:false,callbackUrl:'/login'});
       
     }
